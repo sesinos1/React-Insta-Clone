@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import CommentSection from './components/CommentSection/CommentSection';
+//import CommentSection from './components/CommentSection/CommentSection';
 import PostContainer from './components/PostContainer/PostContainer';
 import SearchBar from './components/SearchBar/SearchBar';
 
