@@ -16,7 +16,7 @@ const Post = props => {
 
                     
         </div>
-            <CommentSection commments={props.commments} />
+            <CommentSection comments={props.comments} />
         <div>
         
         </div>

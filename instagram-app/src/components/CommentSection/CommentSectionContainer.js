@@ -18,6 +18,6 @@ class CommentSection extends React.Component {
           
       </div>
     )
-  }
+  };
 }
 export default CommentSection
