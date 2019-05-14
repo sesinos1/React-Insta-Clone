@@ -1,5 +1,5 @@
 import React from 'react';
-// import './PostContainer.css';
+
 import Post from './Post';
 
 const PostContainer = props => {
@@ -8,7 +8,8 @@ const PostContainer = props => {
             {props.profiles.map((props) => (
             <Post thumbnailUrl={props.thumbnailUrl}
             username={props.username}
-            imageUrl={props.imageUrl}/>
+            imageUrl={props.imageUrl}
+            comments={props.comments}/>
             ))}
 
         </div>
