@@ -14,10 +14,12 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      profiles: dummyData
+      profiles: []
     };
   }
-
+  componentDidMount (){
+    this.setState({profiles: dummyData})
+  }
   render () {
     return(
       <div>
