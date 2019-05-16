@@ -2,11 +2,10 @@ import React from 'react';
 
 
 //import CommentSection from './components/CommentSection/CommentSection';
-import PostContainer from './components/PostContainer/PostContainer';
-import SearchBar from './components/SearchBar/SearchBar';
-
+import withAuthenticate from './components/Authentication/withAuthenticate';
 import dummyData from './dummy-data';
-
+import LoginPage from './components/Login/LoginPage';
+import PostPage from './components/PostContainer/PostPage';
 import './App.css';
 
 
@@ -22,12 +21,9 @@ class App extends React.Component {
   }
   render () {
     return(
-      <div>
-        <SearchBar/>
-        <PostContainer profiles={this.state.profiles}/>
-      </div>
-    )
+      <PostPage profiles={this.state.profiles}/>
+    );
   }
 }
 
-export default App;
+export default withAuthenticate(App)(LoginPage);

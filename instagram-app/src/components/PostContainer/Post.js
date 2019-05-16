@@ -13,10 +13,15 @@ const Post = props => {
 
             </div>
                     <img src={props.imageUrl} alt="thumbnail" />
-
+                    <p>likes= {props.likes}</p>
+                   
                     
         </div>
             <CommentSection comments={props.comments} />
+            <p>{props.timestamp}</p>
+
+            
+            
         <div>
         
         </div>
