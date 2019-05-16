@@ -6,6 +6,7 @@ import withAuthenticate from './components/Authentication/withAuthenticate';
 import dummyData from './dummy-data';
 import LoginPage from './components/Login/LoginPage';
 import PostPage from './components/PostContainer/PostPage';
+
 import './App.css';
 
 
@@ -19,6 +20,7 @@ class App extends React.Component {
   componentDidMount (){
     this.setState({profiles: dummyData})
   }
+  
   render () {
     return(
       <PostPage profiles={this.state.profiles}/>
